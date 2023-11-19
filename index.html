@@ -2,25 +2,55 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Diploma-project</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.min.css">
-	<style>
-		* {
-			font-family: "Montserrat", sans-serif;
-		}
-	</style>
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/hero.min.css">
+	<title>Diploma-project</title>
 </head>
 <body>
 <div class="wrapper">
-	<a href="location.html">Расположение</a>
-	<a href="plans.html">Планировки</a>
-	<header></header>
-	
-	<section class="hero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim in itaque laborum nesciunt perferendis tempore veniam. Error ex maiores qui quo tempore! Aspernatur dignissimos, esse facilis illo iusto magnam minima modi, nam nesciunt odit, perferendis quam quod rem repellendus reprehenderit similique suscipit tenetur. Aliquid labore nostrum officiis quaerat repellendus.</section>
-	
+	<header>
+		<div class="container">
+			<div class="header">
+				<div class="head__logo">БК "Ясенево"</div>
+				<nav>
+					<ul>
+						<li class="nav__item"><a href="/">Главная</a></li>
+						<li class="nav__item"><a href="location.html">Расположение</a></li>
+						<li class="nav__item"><a href="plans.html">Планировки</a></li>
+						<li class="nav__item nav__item_button"><a href="tel:+74952214022">+7 (495) 221-40-22</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="hero">
+				<h1 class="hero__title">Оффисы класса "А" в бизнес-квартале "Ясенево"</h1>
+				<img src="images/hero/busines-kvartal.png" alt="Бизнес квартал">
+				<div class="hero__parametrs">
+					<div class="hero__parametrs_item">
+						<span><strong>1 мин</strong></span>
+						<span>пешком от метро</span>
+					</div>
+					<div class="hero__parametrs_item">
+						<span><strong>от 60 м<sup>2</sup></strong></span>
+						<span>помещения под офисы</span>
+					</div>
+					<div class="hero__parametrs_item">
+						<span><strong>2024 г.</strong></span>
+						<span>первая очередь</span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
 	<footer></footer>
 </div>
 </body>

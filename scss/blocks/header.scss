@@ -1,5 +1,9 @@
 @import "../variables";
 
+* {
+  font-family: Montserrat, sans-serif;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -15,15 +19,18 @@
 
 .nav {
   list-style: none;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 600px;
-  &__item {
-    &_botton {
-      color: #fff;
-      padding: 14px 32px;
-      background: $PrimaryBlue100;
+  &__items {
+    display: flex;
+    gap: 33px;
+    &__item {
+      &_button {
+        color: #fff;
+        padding: 14px 32px;
+        background: $PrimaryBlue100;
+      }
     }
   }
 }

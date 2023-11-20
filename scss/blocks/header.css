@@ -1,17 +1,27 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "../variables";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   header.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../variables\";\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   header.scss 1:9  root stylesheet";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  margin-top: 40px;
 }
+.header__logo {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 170%;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+}
+.nav__item_botton {
+  color: #fff;
+  padding: 14px 32px;
+  background: #2C3878;
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,26 @@
+.details {
+  margin-bottom: 135px;
+}
+.details .details__border {
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.details__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.details .details__img {
+  width: 138px;
+  height: 138px;
+}
+.details .button__details {
+  color: #fff;
+  padding: 14px 32px;
+  background: #2C3878;
+}
+/*# sourceMappingURL=details.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+			xmlns="http://www.w3.org/1999/html">
 
 <head>
 	<meta charset="UTF-8" />
@@ -8,6 +9,10 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/blocks/header-dist.css">
 	<link rel="stylesheet" href="css/blocks/hero-dist.css">
+	<link rel="stylesheet" href="css/blocks/inf.css">
+	<link rel="stylesheet" href="css/blocks/infra.css">
+	<link rel="stylesheet" href="css/blocks/details.css">
+	<link rel="stylesheet" href="css/blocks/footer.css">
 	<title>Diploma-project</title>
 </head>
 <body>
@@ -15,7 +20,7 @@
 	<header>
 		<div class="container">
 			<div class="header">
-				<div class="head__logo">БК "Ясенево"</div>
+				<div class="header__logo">БК "Ясенево"</div>
 				<nav>
 					<ul class="nav__items">
 						<li class="nav__item"><a href="/"></a></li>
@@ -31,7 +36,7 @@
 	<main>
 		<div class="container">
 			<section class="hero">
-				<h1 class="hero__title">Оффисы класса "А" в бизнес-квартале "Ясенево"</h1>
+				<h1 class="hero__title hero__title_smaller">Оффисы класса "А" в бизнес-квартале "Ясенево"</h1>
 				<div class="hero__parametrs">
 					<div class="hero__parametrs_item">
 						<span><strong>1 мин</strong></span>
@@ -48,10 +53,139 @@
 				</div>
 				<img src="images/hero/busines-kvartal.png" alt="Бизнес квартал">
 			</section>
+
+			<section class="inf-about">
+				<p class="inf-about__project">О проекте</p>
+				<h2 class="desc__title_inf-about">Уникальный проект в динамично развивающемся районе Москвы</h2>
+				<p class="desc__text desc__text_inf-left">Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов
+					локации – в 1
+					мин.
+					от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит
+					единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика.</p>
+
+				<a class="button inf-about__button" href="#">Узнать больше</a>
+
+				<div class="inf-about__items">
+					<div class="inf-about__item">
+						<img src="./images/about/about-1.png" alt="очистка воздуха">
+						<p>Повышенный класс очистки воздуха</p>
+					</div>
+					<div class="inf-about__item">
+						<img src="./images/about/about-4.png" alt="очистка воздуха">
+						<p>Возможна отделка офиса на выбор</p>
+					</div>
+					<div class="inf-about__item">
+						<img src="./images/about/about-2.png" alt="очистка воздуха">
+						<p>Открывающиеся окна с дистанционным управлением</p>
+					</div>
+					<div class="inf-about__item">
+						<img src="./images/about/about-5.png" alt="очистка воздуха">
+						<p>Офисная кухня в каждом лоте</p>
+					</div>
+					<div class="inf-about__item">
+						<img src="./images/about/about-3.png" alt="очистка воздуха">
+						<p>Паровое увлажнение воздуха</p>
+					</div>
+				</div>
+
+				<div class="desc__desc desc__text_inf-right">
+					<p>Vita-офисы в бизнес-квартале – новые эффективные рабочие пространства на основе идеи витальности (жизненной
+						силы), эстетики и функциональности. Создают благоприятное воздействие на эмоциональное состояние и
+						работоспособность сотрудников, развитие бизнеса. Это единая цифровая среда, инфраструктура для резидентов и
+						уникальные шеринг-помещения: комната для тимбилдинга, лекторий, кабинет врача, йога-класс и многое
+						другое.</p>
+				</div>
+			</section>
+		</div>
+
+		<img class="inf-about__img" src="images/about/about-main.png" alt="">
+
+		<div class="container">
+			<section class="infra">
+				<p class="infra__border">Инфраструктура</p>
+				<h2 class="infra__title">Район с готовой инфраструктурой</h2>
+				<p class="desc__text desc__text_infra">25 слайдов подробной информации
+					Инфраструктура, благоустройство, расположение
+					Инжененрия, концепция и тд.</p>
+
+				<div class="infra__cards">
+					<div class="infra__card infra__card_1">
+						<img src="./images/infra/infra-1.png" alt="">
+						<span class="infra__card_text">Торгово-офисный центр с крытым переходом из метро</span>
+					</div>
+					<div class="infra__card infra__card_2">
+						<img src="./images/infra/infra-2.png" alt="">
+						<span class="infra__card_text">Уникальные пространства для резидентов бизнес центра</span>
+					</div>
+					<div class="infra__card infra__card_3">
+						<img src="./images/infra/infra-3.png" alt="">
+						<span class="infra__card_text">«Уличная гостиная» с удобной мебелью</span>
+
+					</div>
+					<div class="infra__card infra__card_4">
+						<img src="./images/infra/infra-4.png" alt="">
+						<span class="infra__card_text">Подземная и наземная парковка с электро-зарядками</span>
+					</div>
+					<div class="infra__card infra__card_5">
+						<img src="./images/infra/infra-5.png" alt="">
+						<span class="infra__card_text">Благоустройство более 7Га с выходом к набережной</span>
+					</div>
+					<div class="infra__card infra__card_6">
+						<img src="./images/infra/infra-6.png" alt="">
+						<span class="infra__card_text">Магазины, панорамный ресторан, шоу-румы, эвенты</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="details">
+				<p class="details__border">Подробно</p>
+				<div class="details__block">
+					<div class="details__text">
+						<h2 class="details__title">Вся информация о проекте — в презентации</h2>
+						<p class="desc__text desc__text_details">25 слайдов подробной информации
+							Инфраструктура, благоустройство, расположение
+							Инжененрия, концепция и тд.</p>
+					</div>
+					<div class="details__img">
+						<img src="./images/details/details-img.png" alt="PDF">
+					</div>
+				</div>
+				<a class="button__details" href="#">Скачать презентацию</a>
+			</section>
 		</div>
 	</main>
-
-	<footer></footer>
 </div>
+
+<footer class="footer">
+	<div class="container footer-block">
+		<div class="footer__text-inp">
+			<p class="footer__text">Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в
+				локации.
+			</p>
+			<div>
+				<form class="footer__form" action="#" method="get" enctype="multipart/form-data">
+					<div class="footer__inp_name">
+						<input class="footer__inp" tabindex="1" type="text" name="username" value="" placeholder="Ваше имя">
+					</div>
+					<div class="footer__inp_tel">
+						<input class="footer__inp" tabindex="2" type="tel" name="userphone" value="+7 987 654 32 10"
+									 placeholder="">
+					</div>
+				</form>
+				<div class="footer__button">
+					<a href="#">Получить консультацию</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer-block__contacts">
+			<div class="footer__logo">БК “Ясенево”</div>
+			<div class="footer__tel">
+				<a href="tel: +74952214022>">+7 (495) 221-40-22</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
 </body>
 </html>

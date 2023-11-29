@@ -1,0 +1,28 @@
+.location__border {
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+}
+.location__border::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 640px;
+  width: 400px;
+  height: 2px;
+  background: #000000;
+}
+.location .desc__text {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.location .desc__text_inf-left {
+  max-width: 615px;
+}

@@ -5,28 +5,69 @@
   width: 100%;
 
   &__project {
+    position: relative;
     text-transform: uppercase;
     color: $GrayscaleBlack;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    gap: 13px;
+    padding-bottom: 20px;
     &::after {
       position: absolute;
       content: '';
-      top: 1205px;
-      right: 690px;
-      width: 520px;
+      top: 10px;
+      right: 565px;
+      width: 529px;
       height: 2px;
       background: #000000;
     }
   }
+
+  .desc__title_inf-about {
+    max-width: 713px;
+    padding-bottom: 45px;
+    color: $Grayscale50;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 50.4px */
+  }
+
+  .desc__text {
+    color: $Grayscale10;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    &_inf-left {
+      padding-right: 600px;
+      margin-bottom: 98px;
+    }
+  }
+  .desc__text_inf-right {
+    padding-left: 640px;
+    margin-bottom: 25px;
+  }
+
+  .desc__text__plans {
+    margin-bottom: 25px;
+  }
+
+  .inf-about__button {
+    color: #fff;
+    padding: 14px 32px;
+    background: $PrimaryBlue100;
+  }
+
 
   &__items {
     background: $PrimaryBlue100;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 60px;
+    margin-bottom: 85px;
   }
 
   &__item {
@@ -52,3 +93,6 @@
     margin-bottom: 110px;
   }
 }
+
+
+

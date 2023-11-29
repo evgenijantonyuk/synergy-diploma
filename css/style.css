@@ -37,7 +37,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.nav__items__item_button {
+.nav__items .nav__item_button {
   color: #fff;
   padding: 14px 32px;
   background: #2C3878;
@@ -114,21 +114,56 @@
   width: 100%;
 }
 .inf-about__project {
+  position: relative;
   text-transform: uppercase;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
+  gap: 13px;
+  padding-bottom: 20px;
 }
 .inf-about__project::after {
   position: absolute;
   content: "";
-  top: 1205px;
-  right: 690px;
-  width: 520px;
+  top: 10px;
+  right: 565px;
+  width: 529px;
   height: 2px;
   background: #000000;
+}
+.inf-about .desc__title_inf-about {
+  max-width: 713px;
+  padding-bottom: 45px;
+  color: #333333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 50.4px */
+}
+.inf-about .desc__text {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.inf-about .desc__text_inf-left {
+  padding-right: 600px;
+  margin-bottom: 98px;
+}
+.inf-about .desc__text_inf-right {
+  padding-left: 640px;
+  margin-bottom: 25px;
+}
+.inf-about .desc__text__plans {
+  margin-bottom: 25px;
+}
+.inf-about .inf-about__button {
+  color: #fff;
+  padding: 14px 32px;
+  background: #2C3878;
 }
 .inf-about__items {
   background: #2C3878;
@@ -137,6 +172,7 @@
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   padding: 60px;
+  margin-bottom: 85px;
 }
 .inf-about__item {
   width: 330px;
@@ -163,13 +199,26 @@
   margin-bottom: 110px;
 }
 
+.infra {
+  padding-bottom: 110px;
+}
 .infra .infra__border {
+  position: relative;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
   text-transform: uppercase;
+}
+.infra .infra__border::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 500px;
+  width: 520px;
+  height: 2px;
+  background: #000000;
 }
 .infra__cards {
   display: -ms-grid;
@@ -254,15 +303,25 @@
 }
 
 .details {
-  margin-bottom: 135px;
+  padding-bottom: 135px;
 }
 .details .details__border {
+  position: relative;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   text-transform: uppercase;
+}
+.details .details__border::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 570px;
+  width: 520px;
+  height: 2px;
+  background: #000000;
 }
 .details__block {
   display: -webkit-box;
@@ -277,6 +336,47 @@
   color: #fff;
   padding: 14px 32px;
   background: #2C3878;
+}
+
+.plans {
+  padding-bottom: 71px;
+  width: 100%;
+  max-width: 561px;
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.plans__border {
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+}
+.plans__border::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 670px;
+  width: 400px;
+  height: 2px;
+  background: #000000;
+}
+
+.plans__offices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.plans__offices .plan {
+  width: 380px;
 }
 
 .footer {
@@ -420,7 +520,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
 }
-.nav__items__item_button {
+.nav__items .nav__item_button {
   color: #fff;
   padding: 14px 32px;
   background: #2C3878;
@@ -492,13 +592,116 @@ li {
   font-size: 48px;
 }
 
-.infra .infra__border {
+.inf-about {
+  padding-bottom: 166px;
+  width: 100%;
+}
+.inf-about__project {
+  position: relative;
+  text-transform: uppercase;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
+  gap: 13px;
+  padding-bottom: 20px;
+}
+.inf-about__project::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 565px;
+  width: 529px;
+  height: 2px;
+  background: #000000;
+}
+.inf-about .desc__title_inf-about {
+  max-width: 713px;
+  padding-bottom: 45px;
+  color: #333333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 50.4px */
+}
+.inf-about .desc__text {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.inf-about .desc__text_inf-left {
+  padding-right: 600px;
+  margin-bottom: 98px;
+}
+.inf-about .desc__text_inf-right {
+  padding-left: 640px;
+  margin-bottom: 25px;
+}
+.inf-about .desc__text__plans {
+  margin-bottom: 25px;
+}
+.inf-about .inf-about__button {
+  color: #fff;
+  padding: 14px 32px;
+  background: #2C3878;
+}
+.inf-about__items {
+  background: #2C3878;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  margin-bottom: 85px;
+}
+.inf-about__item {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.inf-about__item:nth-child(3) {
+  width: 370px;
+}
+.inf-about__item:nth-child(5) {
+  width: 370px;
+}
+.inf-about__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+
+.infra {
+  padding-bottom: 110px;
+}
+.infra .infra__border {
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
   text-transform: uppercase;
+}
+.infra .infra__border::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 500px;
+  width: 520px;
+  height: 2px;
+  background: #000000;
 }
 .infra__cards {
   display: -ms-grid;
@@ -583,15 +786,25 @@ li {
 }
 
 .details {
-  margin-bottom: 135px;
+  padding-bottom: 135px;
 }
 .details .details__border {
+  position: relative;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   text-transform: uppercase;
+}
+.details .details__border::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 570px;
+  width: 520px;
+  height: 2px;
+  background: #000000;
 }
 .details__block {
   display: -webkit-box;

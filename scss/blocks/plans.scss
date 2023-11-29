@@ -1,0 +1,43 @@
+@import "../variables";
+
+.plans {
+  padding-bottom: 71px;
+  width: 100%;
+  max-width: 561px;
+  color: $Grayscale10;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.plans__border {
+  position: relative;
+  color: $GrayscaleBlack;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 11px;
+    right: 670px;
+    width: 400px;
+    height: 2px;
+    background: #000000;
+  }
+}
+.plans__offices {
+  display: flex;
+  flex-wrap: wrap;
+  .plan {
+    width: 380px;
+  }
+}
+
+
+
+

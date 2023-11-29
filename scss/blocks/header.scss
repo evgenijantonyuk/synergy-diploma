@@ -23,12 +23,11 @@
     display: flex;
     gap: 33px;
    align-items: center;
-    &__item {
-      &_button {
+      .nav__item_button {
         color: #fff;
         padding: 14px 32px;
         background: $PrimaryBlue100;
       }
     }
   }
-}
+

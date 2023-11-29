@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../scss/blocks/header.scss","header.css"],"names":[],"mappings":"AAEA,OACE,oDACA,kEACA,6EACA,cACA,gBACA,eACE,iBACA,gBACA,iBACA,eAIJ,MACE,eACA,kEACA,6EACA,YACA,aACE,oDACA,SACD,kEAEG,0BACE,UACA,kBACA,mBCAR,E"}
+{"version":3,"sources":["../../scss/blocks/header.scss","../../scss/variables.scss","header.css"],"names":[],"mappings":"AAEA,OACE,qDACA,kEACA,6EACA,aCHe,CDIf,eEDF,CFEE,cACE,kBACA,gBACA,iBACA,cEAJ,CFIA,KACE,gBACA,kEACA,6EACA,WEDF,CFEE,YACE,qDACA,SACD,iEEAH,CFCM,8BACE,WACA,kBACA,kBECR,E"}

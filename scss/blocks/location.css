@@ -1,11 +1,15 @@
+.location {
+  margin-bottom: 100px;
+}
 .location__border {
   position: relative;
   color: #000000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 .location__border::after {
   position: absolute;

@@ -1,7 +1,6 @@
 @import "../variables";
 
 .plans {
-  padding-bottom: 71px;
   width: 100%;
   max-width: 561px;
   color: $Grayscale10;
@@ -9,6 +8,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  &__image_2 {
+    margin-bottom: 119px;
+  }
+}
+
+.plans-desc {
+  margin-bottom: 71px;
 }
 
 .plans__border {
@@ -19,6 +25,7 @@
   font-weight: 500;
   line-height: 150%; /* 24px */
   text-transform: uppercase;
+  margin-bottom: 43px;
 
   &::after {
     position: absolute;
@@ -30,13 +37,54 @@
     background: #000000;
   }
 }
+
 .plans__offices {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 139px;
+
   .plan {
+    margin-right: 15px;
     width: 380px;
+
+    &__image {
+      margin-bottom: 37px;
+    }
+
+    &__title {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 36px */
+      text-transform: uppercase;
+      margin-bottom: 11px;
+    }
+
+    &__desc {
+      max-width: 310px;
+      color: #9C9C9C;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 21.6px */
+      margin-bottom: 53px;
+    }
+
+    &__button {
+      border: none;
+      padding: 14px 34px 14px 32px;
+      background: $PrimaryBlue100;
+      color: #ffffff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      cursor: pointer;
+    }
   }
 }
+
 
 
 

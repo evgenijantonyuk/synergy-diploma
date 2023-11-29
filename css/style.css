@@ -171,7 +171,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 60px;
+  padding: 65px;
   margin-bottom: 85px;
 }
 .inf-about__item {
@@ -183,7 +183,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
-  gap: 25px;
+  gap: 30px;
   margin-bottom: 25px;
 }
 .inf-about__item:nth-child(3) {
@@ -313,6 +313,7 @@
   font-weight: 500;
   line-height: 150%;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .details .details__border::after {
   position: absolute;
@@ -327,19 +328,56 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.details .details__img {
+
+.details__title {
+  max-width: 570px;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.details__desc {
+  max-width: 634px;
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.details__img {
   width: 138px;
   height: 138px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  cursor: pointer;
 }
-.details .button__details {
+
+.button__details {
   color: #fff;
   padding: 14px 32px;
   background: #2C3878;
 }
 
+.details__item {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  list-style-type: disc;
+  line-height: 160%; /* 28.8px */
+}
+
 .plans {
-  padding-bottom: 71px;
   width: 100%;
   max-width: 561px;
   color: #9C9C9C;
@@ -347,6 +385,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+.plans__image_2 {
+  margin-bottom: 119px;
+}
+
+.plans-desc {
+  margin-bottom: 71px;
 }
 
 .plans__border {
@@ -357,6 +402,7 @@
   font-weight: 500;
   line-height: 150%; /* 24px */
   text-transform: uppercase;
+  margin-bottom: 43px;
 }
 .plans__border::after {
   position: absolute;
@@ -374,9 +420,43 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 139px;
 }
 .plans__offices .plan {
+  margin-right: 15px;
   width: 380px;
+}
+.plans__offices .plan__image {
+  margin-bottom: 37px;
+}
+.plans__offices .plan__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+.plans__offices .plan__desc {
+  max-width: 310px;
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  margin-bottom: 53px;
+}
+.plans__offices .plan__button {
+  border: none;
+  padding: 14px 34px 14px 32px;
+  background: #2C3878;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
 }
 
 .footer {
@@ -654,7 +734,7 @@ li {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 60px;
+  padding: 65px;
   margin-bottom: 85px;
 }
 .inf-about__item {
@@ -666,7 +746,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
-  gap: 25px;
+  gap: 30px;
   margin-bottom: 25px;
 }
 .inf-about__item:nth-child(3) {
@@ -796,6 +876,7 @@ li {
   font-weight: 500;
   line-height: 150%;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .details .details__border::after {
   position: absolute;
@@ -810,15 +891,53 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.details .details__img {
+
+.details__title {
+  max-width: 570px;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.details__desc {
+  max-width: 634px;
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.details__img {
   width: 138px;
   height: 138px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  cursor: pointer;
 }
-.details .button__details {
+
+.button__details {
   color: #fff;
   padding: 14px 32px;
   background: #2C3878;
+}
+
+.details__item {
+  color: #9C9C9C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  list-style-type: disc;
+  line-height: 160%; /* 28.8px */
 }
 
 .footer {

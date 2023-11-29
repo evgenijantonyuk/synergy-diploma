@@ -1,14 +1,16 @@
 @import "../variables";
 
 .location {
+  margin-bottom: 100px;
   &__border {
     position: relative;
     color: $GrayscaleBlack;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     text-transform: uppercase;
+    margin-bottom: 25px;
     &::after {
       position: absolute;
       content: '';

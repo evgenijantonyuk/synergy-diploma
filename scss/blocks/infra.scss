@@ -10,6 +10,10 @@
     font-weight: 500;
     line-height: 150%;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    &__title {
+      margin-bottom: 45px;
+    }
     &::after {
       position: absolute;
       content: '';
@@ -19,6 +23,9 @@
       height: 2px;
       background: #000000;
     }
+  }
+  &__title {
+    margin-bottom: 45px;
   }
   &__cards {
     display: grid;

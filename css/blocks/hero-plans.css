@@ -3,7 +3,7 @@
   position: relative;
 }
 .hero__title {
-  max-width: 572px;
+  max-width: 700px;
   color: #333333;
   font-size: 72px;
   font-style: normal;
@@ -16,7 +16,7 @@
   content: "";
   top: 150px;
   right: 0;
-  width: 400px;
+  width: 492px;
   height: 2px;
   background: #000000;
 }
@@ -63,4 +63,3 @@
 .hero .hero__parametrs_item strong {
   font-size: 48px;
 }
-/*# sourceMappingURL=hero.css.map */

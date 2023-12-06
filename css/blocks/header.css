@@ -42,4 +42,45 @@
   padding: 14px 32px;
   background: #2C3878;
 }
+.nav__items .nav__item_image {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .header__logo {
+    font-size: 20px;
+  }
+  .nav {
+    width: 480px;
+  }
+  .nav__item {
+    font-size: 14px;
+  }
+  .nav__item:first-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    margin-top: 15px;
+  }
+  .header__logo {
+    font-size: 20px;
+  }
+  .nav {
+    width: auto;
+  }
+  .nav__item {
+    padding: 12px 20px;
+  }
+  .nav__item:not(:last-child) {
+    display: none;
+  }
+  .nav__item .phone__number {
+    display: none;
+  }
+  .nav__item .nav__item_image {
+    display: block;
+  }
+}
 /*# sourceMappingURL=header.css.map */

@@ -6,6 +6,7 @@
   justify-content: space-between;
   color: $GrayscaleBlack;
   margin-top: 40px;
+
   &__logo {
     font-style: normal;
     font-weight: 700;
@@ -19,15 +20,66 @@
   align-items: center;
   justify-content: space-between;
   width: 600px;
+
   &__items {
     display: flex;
     gap: 33px;
-   align-items: center;
-      .nav__item_button {
-        color: #fff;
-        padding: 14px 32px;
-        background: $PrimaryBlue100;
+    align-items: center;
+
+    .nav__item_button {
+      color: #fff;
+      padding: 14px 32px;
+      background: $PrimaryBlue100;
+    }
+    .nav__item_image {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .header {
+    &__logo {
+      font-size: 20px;
+    }
+  }
+  .nav {
+    width: 480px;
+
+    &__item {
+      font-size: 14px;
+
+      &:first-child {
+        display: none;
       }
     }
   }
+}
 
+@media screen and (max-width: 767px) {
+  .header {
+    margin-top: 15px;
+
+    &__logo {
+      font-size: 20px;
+    }
+  }
+
+  .nav {
+    width: auto;
+
+    &__item {
+      padding: 12px 20px;
+      &:not(:last-child) {
+        display: none;
+      }
+      .phone__number {
+        display: none;
+      }
+
+      .nav__item_image {
+        display: block;
+      }
+    }
+  }
+}

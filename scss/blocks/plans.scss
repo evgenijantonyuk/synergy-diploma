@@ -41,10 +41,10 @@
 .plans__offices {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 139px;
+  margin-bottom: 100px;
 
   .plan {
-    margin-right: 15px;
+    gap: 15px;
     width: 380px;
 
     &__image {
@@ -81,6 +81,7 @@
       font-weight: 500;
       line-height: 150%;
       cursor: pointer;
+      margin-bottom: 35px;
     }
   }
 }

@@ -14,6 +14,7 @@
     line-height: 150%;
     gap: 13px;
     padding-bottom: 20px;
+
     &::after {
       position: absolute;
       content: '';
@@ -41,13 +42,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
+
     &_inf-left {
-      padding-right: 600px;
+      max-width: 610px;
       margin-bottom: 98px;
     }
   }
+
   .desc__text_inf-right {
-    padding-left: 640px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 510px;
+    max-width: 610px;
     margin-bottom: 25px;
   }
 
@@ -58,7 +64,12 @@
   .inf-about__button {
     color: #fff;
     padding: 14px 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     background: $PrimaryBlue100;
+    width: 193px;
+    height: 48px;
   }
 
 
@@ -93,6 +104,84 @@
     margin-bottom: 110px;
   }
 }
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .inf-about {
+    width: 90%;
+
+    &__project {
+      position: relative;
+      text-transform: uppercase;
+      color: $GrayscaleBlack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      gap: 13px;
+      padding-bottom: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: 179px;
+        width: 529px;
+        height: 2px;
+        background: #000000;
+      }
+    }
+
+    .inf-about__items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .desc__text_inf-right {
+      margin-left: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .inf-about {
+    width: 100%;
+
+    &__project {
+      position: relative;
+      text-transform: uppercase;
+      color: $GrayscaleBlack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      gap: 13px;
+      padding-bottom: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: 187px;
+        width: 267px;
+        height: 2px;
+        background: #000000;
+      }
+    }
+
+    .desc__text_inf-right {
+      margin-left: 0;
+    }
+
+    .inf-about__items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+
+
 
 
 

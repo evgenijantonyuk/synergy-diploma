@@ -63,3 +63,23 @@
   line-height: 160%; /* 28.8px */
 }
 
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .details {
+    padding-bottom: 135px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .details {
+    padding-bottom: 135px;
+    &__block {
+      display: flex;
+      flex-direction: column;
+    .details__img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

@@ -84,8 +84,7 @@
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .footer {
-    //width: 100%;
-    //max-width: 835px;
+    width: 100%;
     padding-left: 71px;
     padding-right: 71px;
     &__text {
@@ -102,8 +101,7 @@
 
 @media screen and (max-width: 767px) {
   .footer {
-    //max-width: 375px;
-    //width: 100%;
+    width: 100%;
   }
   .footer__text {
     font-size: 20px;
@@ -114,16 +112,20 @@
   }
 
   .footer-block {
-    padding: 110px 13px 27px 13px;
+    padding: 110px 0 27px 0;
   }
 
   .footer__text-inp {
     display: flex;
     flex-direction: column;
   }
+  .footer__inp {
+    width: 375px;
+  }
 
   .footer__button {
     margin-bottom: 140px;
+    font-size: 14px;
   }
 
   .footer-block__contacts {
@@ -141,10 +143,6 @@
   .footer__tel {
     color: $GrayscaleWhite;
     font-size: 24px;
-  }
-
-  .footer__form {
-    max-width: 334px;
   }
 }
 

@@ -1,8 +1,9 @@
 @import "../variables";
 
 .footer {
-  width: 1440px;
+  width: 100%;
   background: $PrimaryBlue100;
+}
   .footer-block__contacts {
     display: flex;
     justify-content: space-around;
@@ -12,11 +13,19 @@
     padding-top: 77px;
     padding-bottom: 46px;
     color: #ffffff;
+  }
+    .footer__text {
+      max-width: 547px;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 38.4px */
+    }
 
     .footer__text-inp {
       display: flex;
       justify-content: space-around;
-      padding-bottom: 110px;
+      margin-bottom: 105px;
 
       .footer__inp {
         flex-direction: column;
@@ -24,15 +33,21 @@
         padding: 12px;
         background: $PrimaryBlue100;
         color: #ffffff;
-        border: none;
         border: solid 1px #ffffff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+
         &_name {
           margin-bottom: 20px;
         }
+
         &_tel {
           padding-bottom: 20px;
         }
       }
+
       input::-webkit-input-placeholder {
         color: #ffffff;
       }
@@ -47,29 +62,89 @@
         padding: 14px 32px;
         width: 244px;
       }
+    }
 
-      .footer__text {
-        max-width: 547px;
+      .footer__logo {
+        color: $GrayscaleWhite;
+        font-feature-settings: 'clig' off, 'liga' off;
         font-size: 32px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 120%; /* 38.4px */
+        font-weight: 700;
+        line-height: 170%; /* 54.4px */
       }
+
+      .footer__tel {
+        color: $GrayscaleWhite;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 48px */
+      }
+
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .footer {
+    //width: 100%;
+    //max-width: 835px;
+    padding-left: 71px;
+    padding-right: 71px;
+    &__text {
+      margin-bottom: 20px;
     }
   }
+
+  .footer__text-inp {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer {
+    //max-width: 375px;
+    //width: 100%;
+  }
+  .footer__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    margin-bottom: 20px;
+  }
+
+  .footer-block {
+    padding: 110px 13px 27px 13px;
+  }
+
+  .footer__text-inp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__button {
+    margin-bottom: 140px;
+  }
+
+  .footer-block__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer__logo {
     color: $GrayscaleWhite;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 170%; /* 54.4px */
-    }
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
   .footer__tel {
     color: $GrayscaleWhite;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 48px */
+    font-size: 24px;
+  }
+
+  .footer__form {
+    max-width: 334px;
   }
 }
+

@@ -62,16 +62,18 @@
   }
 
   .inf-about__button {
-    color: #fff;
     padding: 14px 32px;
     display: flex;
     text-align: center;
     justify-content: center;
     background: $PrimaryBlue100;
     width: 193px;
-    height: 48px;
+    color: $GrayscaleWhite;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
   }
-
 
   &__items {
     background: $PrimaryBlue100;
@@ -82,16 +84,14 @@
   }
 
   &__item {
-    width: 330px;
     display: flex;
     align-items: center;
-    color: #ffffff;
     gap: 30px;
     margin-bottom: 25px;
   }
 
   &__item:nth-child(3) {
-    width: 370px;
+    width: 430px;
   }
 
   &__item:nth-child(5) {
@@ -100,8 +100,17 @@
 
   &__img {
     object-fit: cover;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 110px;
+  }
+
+  .item__text {
+    color: $GrayscaleWhite;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    width: 310px;
   }
 }
 
@@ -136,8 +145,17 @@
       flex-direction: column;
     }
 
-    .desc__text_inf-right {
-      margin-left: 0;
+    &__img {
+      //max-width: 835px;
+      width: 100%;
+    }
+
+    .inf-about__button {
+      padding: 14px 32px;
+
+      .desc__text_inf-right {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -145,13 +163,19 @@
 
 @media screen and (max-width: 767px) {
   .inf-about {
-    width: 100%;
+    width: 90%;
+
+    &__img {
+      //max-width: 390px;
+      width: 100%;
+      min-height: 250px;
+    }
 
     &__project {
       position: relative;
       text-transform: uppercase;
       color: $GrayscaleBlack;
-      font-size: 16px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 500;
       line-height: 150%;
@@ -173,12 +197,34 @@
       margin-left: 0;
     }
 
+    .desc__text {
+      color: $Grayscale10;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+    }
+
     .inf-about__items {
       display: flex;
       flex-direction: column;
     }
+
+    .item__text {
+      color: $GrayscaleWhite;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 19.2px */
+      width: 200px;
+    }
+  }
+  .infra__card_text {
+    width: 254px;
   }
 }
+
+
 
 
 

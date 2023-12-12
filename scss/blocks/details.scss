@@ -92,6 +92,7 @@
 @media screen and (max-width: 767px) {
   .details {
     padding-bottom: 135px;
+
     .block__border {
       position: relative;
       color: $GrayscaleBlack;
@@ -111,15 +112,16 @@
         height: 2px;
         background: #000000;
       }
-
-      &__block {
-        display: flex;
-        flex-direction: column;
-      }
+    }
 
       .block__title {
         max-width: 312px;
         font-size: 20px;
+      }
+
+      .details__block {
+        display: flex;
+        flex-direction: column;
       }
 
       .details__img {
@@ -131,4 +133,5 @@
       }
     }
   }
-}
+
+

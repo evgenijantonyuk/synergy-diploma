@@ -1,159 +1,306 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/blocks/header-dist.css">
-    <link rel="stylesheet" href="css/blocks/hero-location.css">
-    <link rel="stylesheet" href="css/blocks/location.css">
-    <link rel="stylesheet" href="css/blocks/inf.css">
-    <link rel="stylesheet" href="css/blocks/infra.css">
-    <link rel="stylesheet" href="css/blocks/details.css">
-    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Расположение</title>
-</head>
-<body>
-<div class="wrapper">
-    <header>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <a class="header__logo" href="index.html"> БК “Ясенево” </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="index.html" title="Главная">Главная</a>
+            </li>
+            <li class="nav__list-item">
+              <a
+                class="nav__list-link active-link"
+                href="location.html"
+                title="Расположение"
+                >Расположение</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="plans.html" title="Планировки"
+                >Планировки</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link btn" href="tel:+74952214022"
+                >+7 (495) 221-40-22</a
+              >
+              <a class="nav__list-link btn" href="tel:+74952214022">
+                <picture class="nav-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/phone@1x.webp 1x,
+                      ./assets/images/phone@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="nav-image"
+                    src="./assets/images/phone@1x.png"
+                    srcset="./assets/images/phone@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
         <div class="container">
-					<div class="header">
-						<div class="header__logo">БК "Ясенево"</div>
-						<nav>
-							<ul class="nav__items">
-								<li class="nav__item"><a href="index.html">Главная</a></li>
-								<li class="nav__item"><a href="/">Расположение</a></li>
-								<li class="nav__item"><a href="plans.html">Планировки</a></li>
-								<li class="nav__item nav__item_button">
-									<a href="tel:+74952214022">
-										<span class="phone__number">+7 (495) 221-40-22</span>
-										<img class="nav__item_image" src="assets/images/header/headerPic-phone.png" alt="Иконка телефона">
-									</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h1 class="hero__title hero__title_smaller">БК “Ясенево” расположен в  районе с готовой инфраструктурой</h1>
-                <div class="hero__parametrs">
-                    <div class="hero__parametrs_item">
-                        <span><strong>1 мин</strong></span>
-                        <span>пешком от метро</span>
-                    </div>
-                </div>
-                <img class="hero__image" src="assets/images/hero/location-ing-hero.png" alt="Офисное здание">
-            </section>
-            <section class="inf-about">
-                <p class="desc__text desc__text_inf-left">Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов
-                    локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку.
-                    Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного
-                    трафика.</p>
-            </section>
-        </div>
-        <p class="container location__border">Расположение</p>
-        <section class="location">
-            <div class="location__map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A94729d5e3388e3ff9d3555b17af269e80711423f578d21b2f34a3d9b61359381&amp;source=constructor"
-                    width="100%" height="593" frameborder="0"></iframe>
+          <section class="hero-location">
+            <h1 class="hero-location__title">
+              БК “Ясенево” расположен в районе с готовой инфраструктурой
+            </h1>
+            <div class="hero-location__info">
+              <picture class="hero-location__info-illustration">
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./assets/images/hero-location@1x.webp 1x,
+                    ./assets/images/hero-location@2x.webp 2x
+                  "
+                />
+                <img
+                  class="hero-location__info-image"
+                  src="./assets/images/hero-location@1x.png"
+                  srcset="./assets/images/hero-location@2x.png 2x"
+                  alt="Офисы"
+                />
+              </picture>
+              <div class="hero-location__info-text">
+                <h2 class="hero-location__info-text--title">1 мин</h2>
+                <p class="hero-location__info-text--desc">пешком от метро</p>
+              </div>
             </div>
-        </section>
-
-        <section class="container infra">
-					<p class="infra__border">Инфраструктура</p>
-					<h2 class="infra__title">Район с готовой инфраструктурой</h2>
-
-
-
-					<div class="infra__cards">
-                <div class="infra__card infra__card_1">
-                    <img src="assets/images/infra/infra-1.png" alt="">
-                    <span class="infra__card_text">Торгово-офисный центр с крытым переходом из метро</span>
-                </div>
-                <div class="infra__card infra__card_2">
-                    <img src="assets/images/infra/infra-2.png" alt="">
-                    <span class="infra__card_text">Уникальные пространства для резидентов бизнес центра</span>
-                </div>
-                <div class="infra__card infra__card_3">
-                    <img src="assets/images/infra/infra-3.png" alt="">
-                    <span class="infra__card_text">«Уличная гостиная» с удобной мебелью</span>
-
-                </div>
-                <div class="infra__card infra__card_4">
-                    <img src="assets/images/infra/infra-4.png" alt="">
-                    <span class="infra__card_text">Подземная и наземная парковка с электро-зарядками</span>
-                </div>
-                <div class="infra__card infra__card_5">
-                    <img src="assets/images/infra/infra-5.png" alt="">
-                    <span class="infra__card_text">Благоустройство более 7Га с выходом к набережной</span>
-                </div>
-                <div class="infra__card infra__card_6">
-                    <img src="assets/images/infra/infra-6.png" alt="">
-                    <span class="infra__card_text">Магазины, панорамный ресторан, шоу-румы, эвенты</span>
-                </div>
-            </div>
-        </section>
-
-        <div class="container">
-            <section class="details">
-							<div class="block">
-								<p class="block__border">
-									Подробно
-								</p>
-								<h2 class="block__title">Вся информация о проекте     &mdash; в презентации</h2>
-							</div>
-                <div class="details__block">
-                    <div class="details__text">
-                        <ul class="details__items">
-                            <li class="details__item">25 слайдов подробной информации</li>
-                            <li class="details__item">Инфраструктура, благоустройство, расположение</li>
-                            <li class="details__item">Инжененрия, концепция и тд.</li>
-                        </ul>
-                    </div>
-                    <img class="details__img" src="assets/images/details/details-img.png" alt="PDF">
-                </div>
-                <a class="button__details" href="#">Скачать презентацию</a>
-            </section>
-        </div>
-    </main>
-</div>
-<footer class="footer">
-    <div class="container footer-block">
-        <div class="footer__text-inp">
-            <p class="footer__text">Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в
-                локации.
+            <p class="hero-location__info-desc">
+              Бизнес-квартал «Ясенево» расположен на пересечении ключевых
+              маршрутов локации – в 1 мин. от действующей станции метро и
+              автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь
+              проходит единственный путь от жилых районов к метро, что
+              обеспечивает высокую активность пешеходного трафика.
             </p>
-            <div>
-                <form class="footer__form" action="#" method="get" enctype="multipart/form-data">
-                    <div class="footer__inp_name">
-                        <input class="footer__inp" type="text" name="username" value="" placeholder="Ваше имя">
-                    </div>
-                    <div class="footer__inp_tel">
-                        <input class="footer__inp" type="tel" name="userphone" value="+7 987 654 32 10"
-                                     placeholder="">
-                    </div>
-                </form>
-                <div class="footer__button">
-                    <a href="#">Получить консультацию</a>
-                </div>
-            </div>
+          </section>
         </div>
-        <div class="footer-block__contacts">
-            <div class="footer__logo">
-                БК “Ясенево”
+        <section class="map">
+          <div class="container">
+            <div class="map__wrapper">
+              <h1 class="map__info-text">Расположение</h1>
             </div>
-            <div class="footer__tel">
-                <a href="tel: +74952214022>">+7 (495) 221-40-22</a>
-            </div>
-        </div>
+          </div>
+          <div class="map__content">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=37.903466%2C59.122613&z=13"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
+        </section>
+        <section class="inf container">
+          <div class="inf__info">
+            <p class="inf__info-text">Инфраструктура</p>
+            <h2 class="inf__info-title">Район с готовой инфраструктурой</h2>
+            <ul class="inf__list">
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-1@1x.webp 1x,
+                      ./assets/images/inf-1@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-1@1x.png"
+                    srcset="./assets/images/inf-1@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  Торгово-офисный центр с крытым переходом из метро
+                </p>
+              </li>
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-2@1x.webp 1x,
+                      ./assets/images/inf-2@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-2@1x.png"
+                    srcset="./assets/images/inf-2@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  Уникальные пространства для резидентов бизнес центра
+                </p>
+              </li>
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-3@1x.webp 1x,
+                      ./assets/images/inf-3@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-3@1x.png"
+                    srcset="./assets/images/inf-3@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  «Уличная гостиная» с удобной мебелью
+                </p>
+              </li>
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-4@1x.webp 1x,
+                      ./assets/images/inf-4@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-4@1x.png"
+                    srcset="./assets/images/inf-4@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  Подземная и наземная парковка с электро-зарядками
+                </p>
+              </li>
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-5@1x.webp 1x,
+                      ./assets/images/inf-5@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-5@1x.png"
+                    srcset="./assets/images/inf-5@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  Благоустройство более 7Га с выходом к набережной
+                </p>
+              </li>
+              <li class="inf__item">
+                <picture class="inf__item-illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/inf-6@1x.webp 1x,
+                      ./assets/images/inf-6@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="inf__item-images"
+                    src="./assets/images/inf-6@1x.png"
+                    srcset="./assets/images/inf-6@2x.png 2x"
+                    alt="Офисы"
+                  />
+                </picture>
+                <p class="inf__item-desc">
+                  Магазины, панорамный ресторан, шоу-румы, эвенты
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="pdf container">
+          <div class="pdf__wrapper">
+            <div class="pdf__content">
+              <div class="pdf__info">
+                <p class="pdf__info-text">Подробно</p>
+                <h2 class="pdf__info-title">
+                  Вся информация о проекте — в презентации
+                </h2>
+                <ul class="pdf__list">
+                  <li class="pdf__item">25 слайдов подробной информации</li>
+                  <li class="pdf__item">
+                    Инфраструктура, благоустройство, расположение
+                  </li>
+                  <li class="pdf__item">Инжененрия, концепция и тд.</li>
+                </ul>
+              </div>
+              <div class="pdf__picture">
+                <picture class="pdf__illustration">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./assets/images/pdf@1x.webp 1x,
+                      ./assets/images/pdf@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="pdf__images"
+                    src="./assets/images/pdf@1x.png"
+                    srcset="./assets/images/pdf@2x.png 2x"
+                    alt="pdf"
+                  />
+                </picture>
+              </div>
+              
+            </div><a href="./assets/files/Home.pdf" download class="btn"
+                >Скачать презентацию</a
+              >
+          </div>
+        </section>
+      </main>
+	    <footer class="footer">
+		    <div class="footer__content container">
+			    <div class="footer__feedback">
+				    <h2 class="footer__title">
+					    Подберем лучшее помещение под ваши задачи, основываясь на
+					    аналитике бизнес-среды в локации.
+				    </h2>
+				    <form class="footer__form" action="" method="get">
+					    <input class="footer__input" type="text" placeholder="Ваше имя" />
+					    <input
+							    class="footer__input"
+							    type="tel"
+							    placeholder="+7 987 654 32 10"
+					    />
+					    <input
+							    type="submit"
+							    value="Получить консультацию"
+							    class="form__btn"
+					    />
+				    </form>
+			    </div>
+			    <div class="footer__nav">
+				    <a class="footer__logo" href="index.html"> БК “Ясенево” </a>
+				    <a class="footer__tel" href="tel:+74952214022"
+				    >+7 (495) 221-40-22</a
+				    >
+			    </div>
+		    </div>
+	    </footer>
     </div>
-</footer>
-</body>
+  </body>
 </html>

@@ -1,159 +1,184 @@
-@import "../variables";
-
 .plans {
-  width: 100%;
-  max-width: 561px;
-  color: $Grayscale10;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  &__image_2 {
-    margin-bottom: 119px;
-  }
-}
-
-  .plans__border {
+  margin-bottom: 140px;
+  &__info-text {
+    display: inline;
     position: relative;
-    color: $GrayscaleBlack;
+    color: var(--grayscale-black);
+    background: var(--grayscale-white);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    &::after {
-      position: absolute;
-      content: '';
-      top: 10px;
-      right: 525px;
-      width: 520px;
-      height: 2px;
-      background: #000000;
-    }
+    margin-bottom: 25px;
+    padding-right: 6px;
+    z-index: 10;
   }
 
+  &__info-text::before {
+    position: absolute;
+    content: "";
+    background: var(--grayscale-black);
+    width: 640px;
+    height: 2px;
+    top: 8px;
+    left: 0;
+    z-index: -1;
+  }
 
-.plans-desc {
-  margin-bottom: 71px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 35px;
+    padding-top: 25px;
+  }
+
+  &__item-title {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 11px 0 31px;
+  }
+
+  &__item-desc {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 31px;
+    max-width: 332px;
+    min-height: 131px;
+  }
+
+  &__item:nth-child(2) &__item-illustration {
+    display: block;
+    padding-top: 10px;
+  }
 }
 
-.plans__offices {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-
-  .plan {
-    gap: 15px;
-    width: 380px;
-
-    &__image {
-      margin-bottom: 37px;
+@media (max-width: 1440px) {
+  .plans {
+    margin-bottom: 173px;
+    &__info-text {
+      display: inline;
+      position: relative;
+      color: var(--grayscale-black);
+      background: var(--grayscale-white);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      padding-right: 6px;
+      z-index: 10;
     }
 
-    &__title {
+    &__info-text::before {
+      position: absolute;
+      content: "";
+      background: var(--grayscale-black);
+      width: 640px;
+      height: 2px;
+      top: 8px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      row-gap: 30px;
+      padding-top: 30px;
+    }
+
+    &__item-title {
       color: #000;
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 36px */
-      text-transform: uppercase;
-      margin-bottom: 11px;
+      padding: 11px 0 31px;
     }
 
-    &__desc {
-      max-width: 310px;
-      color: #9C9C9C;
+    &__item-desc {
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 120%; /* 21.6px */
-      margin-bottom: 53px;
+      margin-bottom: 31px;
+      max-width: 332px;
+      min-height: 131px;
     }
 
-    &__button {
-      border: none;
-      padding: 14px 34px 14px 32px;
-      background: $PrimaryBlue100;
-      color: #ffffff;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%;
-      cursor: pointer;
-      margin-bottom: 35px;
+    &__item:nth-child(2) &__item-illustration {
+      display: block;
+      padding-top: 10px;
     }
   }
 }
 
-.plans__border {
-  position: relative;
-  color: $GrayscaleBlack;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  &::after {
-    position: absolute;
-    content: '';
-    top: 10px;
-    right: 525px;
-    width: 520px;
-    height: 2px;
-    background: #000000;
-  }
-}
-
-@media screen and (max-width: 1279px) and (min-width: 768px) {
-  .plans__border {
-    position: relative;
-    color: $GrayscaleBlack;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    &::after {
-      position: absolute;
-      content: '';
-      top: 10px;
-      right: 300px;
-      width: 520px;
-      height: 2px;
-      background: #000000;
+@media (max-width: 834px) {
+  .plans {
+    &__wrapper {
+      margin-bottom: 142px;
+      overflow: hidden;
     }
-  }
-}
-
-@media screen and (max-width: 767px) {
-    .plans__border {
+    &__info-text {
+      display: inline;
       position: relative;
-      color: $GrayscaleBlack;
+      color: var(--grayscale-black);
+      background: var(--grayscale-white);
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      padding-right: 6px;
+      z-index: 10;
+    }
 
-      &::after {
-        position: absolute;
-        content: '';
-        top: 10px;
-        right: 210px;
-        width: 247px;
-        height: 2px;
-        background: #000000;
-      }
+    &__info-text::before {
+      position: absolute;
+      content: "";
+      background: var(--grayscale-black);
+      width: 640px;
+      height: 2px;
+      top: 8px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 30px;
+      row-gap: 30px;
+      padding-top: 30px;
+    }
+
+    &__item-title {
+      color: #000;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      padding: 11px 0 31px;
+    }
+
+    &__item-desc {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 13px;
+      max-width: 332px;
+      min-height: auto;
+    }
+
+    &__item:nth-child(2) &__item-illustration {
+      display: block;
+      padding-top: 0px;
+    }
+
+    &__item-btn {
+      width: 100%;
+      text-align: center;
     }
   }
-
-
-
-
-
-
-
+}
